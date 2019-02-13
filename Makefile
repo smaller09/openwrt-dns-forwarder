@@ -13,14 +13,14 @@ PKG_VERSION:=1.2.1
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/aa65535/hev-dns-forwarder.git
+PKG_SOURCE_URL:=https://github.com/smaller09/hev-dns-forwarder.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_RELEASE)
 PKG_SOURCE_VERSION:=289e8c9c7167200668dff83b1e0cbce258665387
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 
 PKG_LICENSE:=GPLv3
 PKG_LICENSE_FILES:=LICENSE
-PKG_MAINTAINER:=Jian Chang <aa65535@live.com>
+PKG_MAINTAINER:=smaller09
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)/$(PKG_SOURCE_SUBDIR)
 
@@ -32,7 +32,7 @@ define Package/dns-forwarder
 	SECTION:=net
 	CATEGORY:=Network
 	TITLE:=Forwarding DNS queries on TCP transport
-	URL:=https://github.com/aa65535/hev-dns-forwarder
+	URL:=https://github.com/smaller09/hev-dns-forwarder
 endef
 
 define Package/dns-forwarder/description
